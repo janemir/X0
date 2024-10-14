@@ -71,6 +71,14 @@ class Program
                     gameOver = true;
                 }
 
+                // Проверка на ничью (Draw)
+                else if (CheckDraw()) 
+                {
+                    PrintBoard();
+                    Console.WriteLine("Ничья!");
+                    gameOver = true;
+                }
+
                 else 
                 {
                     Console.WriteLine("Некорректный ход. Попробуйте снова.");
